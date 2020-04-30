@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Settings
-email=`your@email.com'
+email="your@email.com"
+subject="$domain is down"
 
 # Down.sh lets you check your websites if they are online
 # Websites you want to check
@@ -27,7 +28,7 @@ do
     if [ $? -ne 0 ]
     then
       echo "$domain still down. Sending email to $email ."
-      echo "$domain down" | /usr/sbin/sendmail $email
+      echo "$domain down" | mail -s "$subject" "$email"
     fi
   fi
 done
