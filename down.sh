@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Settings
-email=`your@email.com'`
+email=`your@email.com'
 
 # Down.sh lets you check your websites if they are online
 # Websites you want to check
